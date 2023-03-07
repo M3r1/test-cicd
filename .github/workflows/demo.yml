@@ -15,7 +15,9 @@ jobs:
               with:
                   node-version: 16
             
-            - uses: docker-practice/actions-setup-docker@master  
+            - uses: docker-practice/actions-setup-docker@master 
+            
+            - uses: azure/setup-kubectl@v3
             
             - name: Run Add Test
               working-directory: ./
@@ -28,3 +30,5 @@ jobs:
                   docker login -u m3r1 -p Gm8320961 
                   docker image ls
                   docker push m3r1/testcd:latest
+                  mv ./kubeconfig /root/.kube/config
+                  sudo kubectl get pods
