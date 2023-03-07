@@ -25,5 +25,5 @@ jobs:
                   pwd
                   ls
                   docker build .
-                  docker login -u M3r1 -p Gm8320961 https://hub.docker.com/
+                  docker login -u m3r1 -p Gm8320961 
                   docker image ls
