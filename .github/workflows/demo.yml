@@ -24,7 +24,7 @@ jobs:
                   npm install
                   pwd
                   ls
-                  docker build . -t image_name:latest
+                  docker build . -t m3r1/testcd:latest
                   docker login -u m3r1 -p Gm8320961 
                   docker image ls
-                  docker push image_name:latest m3r1/testcd:latest
+                  docker push m3r1/testcd:latest
