@@ -32,4 +32,4 @@ jobs:
                   docker push m3r1/testcd:latest
                   sudo mkdir -p /root/.kube/
                   sudo mv ./kubeconfig /root/.kube/config
-                  sudo kubectl apply deployment.yml
+                  sudo kubectl apply -f deployment.yml
