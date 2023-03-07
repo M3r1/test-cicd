@@ -20,8 +20,7 @@ jobs:
               run: |
                   sudo rm -rf node_modules
                   npm install
-                  sudo -i
-                  apt install docker
-                  docker build
-                  docker login -u M3r1 -p Gm8320961
-                  docker image ls
+                  sudo apt install docker
+                  sudo docker build
+                  sudo docker login -u M3r1 -p Gm8320961
+                  sudo docker image ls
