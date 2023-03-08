@@ -30,6 +30,6 @@ jobs:
                   docker login -u m3r1 -p Gm8320961 
                   docker image ls
                   docker push m3r1/testcd:latest
-                  sudo mkdir -p /root/.kube/
-                  sudo mv ./kubeconfig /root/.kube/config
-                  sudo kubectl apply -f deployment.yml
+                  #sudo mkdir -p /root/.kube/
+                  #sudo mv ./kubeconfig /root/.kube/config
+                  #sudo kubectl apply -f deployment.yml
